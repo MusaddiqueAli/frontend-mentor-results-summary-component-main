@@ -6,43 +6,76 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+  <script src="./app.js" type="module"></script>
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="result-summary">
+    <div class="results grid-flow" data-spacing="large">
+      <h1 class="section-title">Your Result</h1>
 
-  Your Result
-  76
-  of 100
+      <p class="result-score">
+        <span class="average"></span> of 100
+      </p>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+      <div class="grid-flow">
+        <p class="result-rank">Great</p>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+    <div class="summary grid-flow" data-spacing="large">
+      <h2 class="section-title">Summary</h2>
 
-  Reaction
-  80 / 100
+      <div class="grid-flow">
 
-  Memory
-  92 / 100
+        <div class="summary-item" data-item-type="accent-1">
+          <div class="flex-group">
+            <div class="summary-icon"></div>
+            <h3 class="category-title"></h3>
+          </div>
+          <p class="summary-score">
+            <span class="score"></span> / 100
+          </p>
+        </div>
+        <div class="summary-item" data-item-type="accent-2">
+          <div class="flex-group">
+            <div class="summary-icon"></div>
+            <h3 class="category-title"></h3>
+          </div>
+          <p class="summary-score">
+            <span class="score"></span> / 100
+          </p>
+        </div>
+        <div class="summary-item" data-item-type="accent-3">
+          <div class="flex-group">
+            <div class="summary-icon"></div>
+            <h3 class="category-title"></h3>
+          </div>
+          <p class="summary-score">
+            <span class="score"></span> / 100
+          </p>
+        </div>
+        <div class="summary-item" data-item-type="accent-4">
+          <div class="flex-group">
+            <div class="summary-icon"></div>
+            <h3 class="category-title"></h3>
+          </div>
+          <p class="summary-score">
+            <span class="score"></span> / 100
+          </p>
+        </div>
 
-  Verbal
-  61 / 100
+      </div>
 
-  Visual
-  72 / 100
+      <button class="button">Continue</button>
+    </div>
+  </main>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by 
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="https://github.com/MusaddiqueAli" target="_blank">Musaddique Ali</a>.
+  </footer>
 </body>
 </html>
