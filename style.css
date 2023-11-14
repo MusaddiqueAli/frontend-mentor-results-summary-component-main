@@ -120,7 +120,7 @@ body {
     display: grid;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     body {
         min-height: 100vh;
         display: grid;
@@ -140,7 +140,7 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .results {
         border-radius: 0 0 var(--border-radius) var(--border-radius);
     }
