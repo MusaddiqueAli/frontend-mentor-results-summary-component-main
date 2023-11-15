@@ -120,11 +120,14 @@ body {
     display: grid;
 }
 
-@media (min-width: 700px) {
+/* Small devices (landscape phones, 676px and up) */
+@media (min-width: 676px) {
     body {
         min-height: 100vh;
         display: grid;
+        /* grid-row: 1; */
         place-items: center;
+        /* align-items: center; */
     }
 
     .result-summary {
@@ -140,11 +143,22 @@ body {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 676px) {
+    .result-summary {
+        max-width: 100%;
+    }
     .results {
         border-radius: 0 0 var(--border-radius) var(--border-radius);
     }
 }
+
+/* @media (min-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
+    
+} */
 
 .results {
     color: hsla(var(--clr-neutral-hsl-100), .7);
